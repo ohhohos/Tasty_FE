@@ -1,24 +1,42 @@
 import styled from 'styled-components'
 
 export const HeaderContainer = styled.div`
-background-color: white;
 width: 100%;
 position: sticky;
 top: 0;
-z-index: 11; 
+z-index: 11;
+margin: 20px 0;
 .header {
-  width: 90%;
   display: flex;
-  margin: 10px auto 10px;
   align-items: center;
   justify-content: space-between;
   font-size: 18px;
   &-logo {
-    
-  }
-  &-nav {
-    display: flex;
-    gap: 20px;
+    font-size: 28px;
+    color: #3f4b59;
+    font-weight: 800;
   }
 }
+`
+
+export const HeaderMenu = styled.div`
+	display: flex;
+  align-items: center;
+	gap: 50px;
+  font-size: 18px;
+  font-weight: 400;
+	a {
+    color: #3f4b59;
+		text-decoration: none;
+		transition: all 250ms ease;
+
+		&.active {
+			color: #3f4b59;
+      font-weight: 700;
+		}
+
+		&:hover {
+			color: #3f4b59;
+		}
+	}
 `

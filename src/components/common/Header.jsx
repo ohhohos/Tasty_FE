@@ -1,16 +1,27 @@
 import React from 'react'
-import { HeaderContainer } from './Header.styled'
+import { menus } from '../../constant/homeData'
+import { Link, useLocation } from 'react-router-dom'
+import { HeaderContainer, HeaderMenu } from './Header.styled'
 
 const Header = () => {
+  const { pathname } = useLocation();
   return (
     <HeaderContainer>
       <div className='header'>
-        <img className='header-logo' src='images/logo.png' alt='logo'/>
-        <div className='header-nav'>
-          <span>레시피</span>
-          <span>커뮤니티</span>
+        <div className='header-logo'>
+          <span>DA, DA</span>
         </div>
-        <span>로그인</span>
+        <HeaderMenu>
+						{menus.map(({ to, name }) => (
+							<Link 
+								key={name}
+								to={to} 
+								className={pathname.includes(to) ? 'active' : ''}
+							>
+								{name}
+							</Link>
+						))}
+					</HeaderMenu>
       </div>
     </HeaderContainer>
   )

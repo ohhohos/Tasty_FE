@@ -1,11 +1,7 @@
 import styled from 'styled-components'
 
-export const IntroContainer = styled.div`
+export const ReportHeaderContainer = styled.div`
   display: flex;
   justify-content: center;
-.main {
-  &-intro {
-    width: 95%; 
-  }
-}
+
 `
