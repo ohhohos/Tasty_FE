@@ -1,12 +1,5 @@
-import React from 'react'
-
-
 const FoodDiary = () => {
-  return (
-    
-    <div>Food</div>
-    
-  )
-}
+  return <div>Food</div>;
+};
 
-export default FoodDiary
+export default FoodDiary;

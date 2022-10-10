@@ -1,12 +1,7 @@
-import React from 'react'
-import AppLayout from '../components/Layouts/AppLayout'
+import AppLayout from '../components/Layouts/AppLayout';
 
 const RecipePage = () => {
-  return (
-    <AppLayout>
-      레시피
-    </AppLayout>
-  )
-}
+  return <AppLayout>레시피</AppLayout>;
+};
 
-export default RecipePage
+export default RecipePage;

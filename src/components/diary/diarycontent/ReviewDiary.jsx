@@ -1,12 +1,5 @@
-import React from 'react'
-
-
 const ReviewDiary = () => {
-  return (
-    
-    <div>ReviewDiary</div>
-    
-  )
-}
+  return <div>ReviewDiary</div>;
+};
 
-export default ReviewDiary
+export default ReviewDiary;

@@ -1,12 +1,7 @@
-import React from 'react'
-import { ReportHeaderContainer } from './ReportHeader.styled'
+import { ReportHeaderContainer } from './ReportHeader.styled';
 
-function ReportHeader() {
-  return (
-    <ReportHeaderContainer>
-      date
-    </ReportHeaderContainer>
-  )
-}
+const ReportHeader = () => {
+  return <ReportHeaderContainer>date</ReportHeaderContainer>;
+};
 
-export default ReportHeader
+export default ReportHeader;

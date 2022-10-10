@@ -1,12 +1,7 @@
-import React from 'react'
-import AppLayout from '../components/Layouts/AppLayout'
+import AppLayout from '../components/Layouts/AppLayout';
 
 const WeightPage = () => {
-  return (
-    <AppLayout>
-      체중
-    </AppLayout>
-  )
-}
+  return <AppLayout>체중</AppLayout>;
+};
 
-export default WeightPage
+export default WeightPage;
