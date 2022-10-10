@@ -1,16 +1,16 @@
-import { DiaryHeaderContainer } from './DiaryHeader.styled';
+import * as S from './DiaryHeader.styled';
 
 const DiaryHeader = () => {
   return (
-    <DiaryHeaderContainer>
-      <div className="diary__date">
+    <S.DiaryHeaderContainer>
+      <S.DiaryDate>
         <span>2022.06.30</span>
-      </div>
-      <div className="diary__goal">
+      </S.DiaryDate>
+      <S.DiaryGoal>
         <span>목표칼로리</span>
         <span>2100 kcal</span>
-      </div>
-    </DiaryHeaderContainer>
+      </S.DiaryGoal>
+    </S.DiaryHeaderContainer>
   );
 };
 

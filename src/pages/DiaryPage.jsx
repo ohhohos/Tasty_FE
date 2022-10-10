@@ -1,4 +1,4 @@
-import AppLayout from '../components/Layouts/AppLayout';
+import AppLayout from '../components/layouts/AppLayout';
 import DiaryHeader from '../components/diary/DiaryHeader';
 import DiaryContent from '../components/diary/DiaryContent';
 

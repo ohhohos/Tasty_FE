@@ -1,21 +1,20 @@
-import { Link } from 'react-router-dom';
 import { diary } from '../../constant/homeData';
-import { DiaryButton, DiaryContentContainer } from './DiaryContent.styled';
+import * as S from './DiaryContent.styled';
 
 const DiaryContent = () => {
   return (
-    <DiaryContentContainer>
-      <div className="diary-content">
-        <DiaryButton>
+    <S.DiaryContentContainer>
+      <S.DiaryContent>
+        <S.DiaryButton>
           {diary.map(({ to, name }) => (
-            <Link key={name} to={to} className="diary-content_button">
-              <span>{name}</span>
-            </Link>
+            <S.DiaryContentLink key={name} to={to}>
+              {name}
+            </S.DiaryContentLink>
           ))}
-        </DiaryButton>
-      </div>
+        </S.DiaryButton>
+      </S.DiaryContent>
       <div>summary</div>
-    </DiaryContentContainer>
+    </S.DiaryContentContainer>
   );
 };
 

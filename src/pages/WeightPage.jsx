@@ -1,4 +1,4 @@
-import AppLayout from '../components/Layouts/AppLayout';
+import AppLayout from '../components/layouts/AppLayout';
 
 const WeightPage = () => {
   return <AppLayout>체중</AppLayout>;

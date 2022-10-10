@@ -1,4 +1,4 @@
-import AppLayout from '../components/Layouts/AppLayout';
+import AppLayout from '../components/layouts/AppLayout';
 import KcalPage from '../components/report/KcalPage';
 import ReportHeader from '../components/report/ReportHeader';
 
